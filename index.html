@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AICrawler VIR Transfer</title>
+<style>
+ body{max-width:44rem;margin:3rem auto;padding:0 1.25rem;font:16px/1.7 system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;color:#1f2328}
+ h1{font-size:1.6rem;margin-bottom:.25rem} .sub{color:#59636e;margin-top:0}
+ code{background:#f3f4f6;padding:.1rem .35rem;border-radius:4px;font-size:.9em}
+ a{color:#0969da} footer{margin-top:3rem;color:#59636e;font-size:.9rem;border-top:1px solid #d1d9e0;padding-top:1rem}
+</style>
+</head>
+<body>
+<h1>AICrawler VIR Transfer</h1>
+<p class="sub">一个个人使用的文件中转工具。</p>
+
+<h2>这是什么</h2>
+<p>AICrawler VIR Transfer 是一个运行在作者自己电脑上的程序。它把作者自己的采集程序整理好的
+数据文件，上传到<strong>作者本人的 Google 云端硬盘</strong>中的一个专用文件夹；作者自己的另一台
+接收服务器再从同一个文件夹把这些文件取走。整个流程只在作者本人的设备与作者本人的云端硬盘之间进行，
+用于把数据从一台机器可靠地送到另一台机器。</p>
+
+<h2>它怎么使用 Google 账号</h2>
+<p>本应用通过 <a href="https://rclone.org/">rclone</a> 调用 Google Drive API，
+只申请 <code>drive.file</code> 一种权限。这是 Google 提供的最小化权限范围，含义是：
+<strong>本应用只能访问它自己创建的文件</strong>，无法读取、修改或删除用户云端硬盘中的任何其他内容。</p>
+
+<h2>谁在使用</h2>
+<p>只有作者本人。本应用不面向公众提供服务，没有其他用户，也不接受注册。</p>
+
+<h2>隐私</h2>
+<p>见<a href="./privacy.html">隐私权政策</a>。</p>
+
+<footer>联系方式见隐私权政策页面。</footer>
+</body>
+</html>
